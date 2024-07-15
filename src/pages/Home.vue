@@ -1,7 +1,7 @@
 <script setup>
 import { reactive, inject, watch, onMounted } from 'vue'
 import axios from 'axios'
-import debounce from 'lodash.debounce'
+import debounce from 'lodash/debounce'
 import CardList from '../components/CardList.vue'
 import Sorted from '../components/Sorted.vue'
 
