@@ -1,20 +1,18 @@
 <script setup>
-import { useRoute } from 'vue-router'
-defineProps({
-  total: Number
-})
+  import { useRoute } from 'vue-router'
+  defineProps({
+    total: Number
+  })
 
-const emit = defineEmits(['openDrawer'])
+  const emit = defineEmits(['openDrawer'])
 
-const route = useRoute()
+  const route = useRoute()
 </script>
 
 <template>
-  <header
-    class="flex justify-between items-center flex-wrap gap-4 border-b border-slate-300 px-10 py-8"
-  >
-    <router-link :to="{ name: 'home' }"
-      ><div class="flex items-center">
+  <header class="flex justify-between items-center flex-wrap gap-4 border-b border-slate-300 px-10 py-8">
+    <router-link :to="{ name: 'home' }">
+      <div class="flex items-center">
         <img src="/logo.png" alt="Logo" class="w-10 mr-4" />
         <div>
           <span class="text-xl font-bold uppercase">Vue-project</span>
@@ -41,8 +39,7 @@ const route = useRoute()
             aria-label="Корзина"
             @click="emit('openDrawer')"
             class="font-bold bg-[url(/cart.svg)] bg-no-repeat pl-8 bg-left"
-            type="button"
-          >
+            type="button">
             {{ total }} руб.
           </button>
         </li>
@@ -58,9 +55,9 @@ const route = useRoute()
           <router-link
             :to="{ name: 'profile' }"
             class="bg-[url(/profile.svg)] bg-no-repeat pl-8 bg-left"
-            active-class="text-black"
-            >Профиль</router-link
-          >
+            active-class="text-black">
+            Профиль
+          </router-link>
         </li>
       </ul>
     </nav>

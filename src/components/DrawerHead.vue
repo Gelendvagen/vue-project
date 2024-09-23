@@ -1,6 +1,6 @@
 <script setup>
-import { inject } from 'vue'
-const { closeDrawer } = inject('cart')
+  import { inject } from 'vue'
+  const { closeDrawer } = inject('cart')
 </script>
 
 <template>

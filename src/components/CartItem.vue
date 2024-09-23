@@ -1,11 +1,11 @@
 <script setup>
-defineProps({
-  id: Number,
-  title: String,
-  price: Number,
-  imageUrl: String,
-  removeFromCart: Function
-})
+  defineProps({
+    id: Number,
+    title: String,
+    price: Number,
+    imageUrl: String,
+    removeFromCart: Function
+  })
 </script>
 
 <template>
@@ -13,7 +13,6 @@ defineProps({
     <img class="w-16 h-16" :src="imageUrl" :alt="title" />
     <div class="flex flex-col">
       <p class="mb-2">{{ title }}</p>
-
       <div class="flex justify-between">
         <span class="font-bold">{{ price }} руб.</span>
         <button

@@ -1,10 +1,10 @@
 <script setup>
-defineProps({
-  title: String,
-  description: String,
-  imageUrl: String,
-  colorTitle: String
-})
+  defineProps({
+    title: String,
+    description: String,
+    imageUrl: String,
+    colorTitle: String
+  })
 </script>
 
 <template>

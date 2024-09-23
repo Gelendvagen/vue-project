@@ -1,10 +1,10 @@
 <script setup>
-import { inject } from 'vue'
-import CartItem from './CartItem.vue'
+  import { inject } from 'vue'
+  import CartItem from './CartItem.vue'
 
-const { cart } = inject('cart')
+  const { cart } = inject('cart')
 
-const { removeFromCart } = inject('cart')
+  const { removeFromCart } = inject('cart')
 </script>
 
 <template>

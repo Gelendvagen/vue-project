@@ -1,8 +1,8 @@
 <script setup>
-defineProps({
-  onChangeSelect: Function,
-  onChangeSearchInput: Function
-})
+  defineProps({
+    onChangeSelect: Function,
+    onChangeSearchInput: Function
+  })
 </script>
 <template>
   <select
