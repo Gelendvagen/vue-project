@@ -11,7 +11,7 @@ const { cart } = inject('cart')
 const { checkToCart, clickToCart } = inject('cart')
 
 onMounted(async () => {
-  const { data } = await axios.get('https://715be631198d11a6.mokky.dev/favorites?_relations=items')
+  const { data } = await axios.get('https://d6a5bc990986e9d3.mokky.dev/favorites?_relations=items')
   favorites.value = data.map((obj) => ({ ...obj.item, favoriteId: obj.id, isFavorite: true }))
   checkToCart(favorites)
 })
@@ -19,7 +19,7 @@ onMounted(async () => {
 const removeFromFavorites = async (item) => {
   try {
     item.isFavorite = false
-    await axios.delete(`https://715be631198d11a6.mokky.dev/favorites/${item.favoriteId}`)
+    await axios.delete(`https://d6a5bc990986e9d3.mokky.dev/favorites/${item.favoriteId}`)
     favorites.value = favorites.value.filter((obj) => obj.isFavorite)
   } catch (error) {
     console.log('Error:', error)
@@ -41,7 +41,7 @@ provide(favorites, 'favorites')
   <CardList :items="favorites" :onClickFavorite="removeFromFavorites" :onClickAdd="clickToCart" />
   <div v-if="favorites.length === 0" class="flex justify-center items-center min-h-[50vh]">
     <InfoBlock
-      title="Закладок нет :("
+      title="Закладок нет"
       description="Вы ничего не добавляли в закладки"
       imageUrl="emoji-1.png"
     />

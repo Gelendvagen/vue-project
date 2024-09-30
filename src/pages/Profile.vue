@@ -10,7 +10,7 @@ const orders = ref([])
 const { cart } = inject('cart')
 
 const fetchOrders = async () => {
-  const { data } = await axios.get('https://715be631198d11a6.mokky.dev/orders')
+  const { data } = await axios.get('https://d6a5bc990986e9d3.mokky.dev/orders')
   orders.value = data
 }
 

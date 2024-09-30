@@ -78,7 +78,7 @@
   const createOrders = async () => {
     try {
       isDisabledButtonCart.value = true
-      const { data } = await axios.post('https://715be631198d11a6.mokky.dev/orders', {
+      const { data } = await axios.post('https://d6a5bc990986e9d3.mokky.dev/orders', {
         items: cart.value,
         total: totalPrice.value,
         createdAt: new Date()
