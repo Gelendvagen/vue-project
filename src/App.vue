@@ -33,14 +33,14 @@
     try {
       if (!item.isFavorite) {
         item.isFavorite = !item.isFavorite
-        const { data } = await axios.post('https://715be631198d11a6.mokky.dev/favorites', {
+        const { data } = await axios.post('https://d6a5bc990986e9d3.mokky.dev/favorites', {
           item_id: item.id
         })
 
         item.favoriteId = data.id
       } else {
         item.isFavorite = !item.isFavorite
-        await axios.delete(`https://715be631198d11a6.mokky.dev/favorites/${item.favoriteId}`)
+        await axios.delete(`https://d6a5bc990986e9d3.mokky.dev/favorites/${item.favoriteId}`)
         item.favoriteId = null
       }
     } catch (error) {
