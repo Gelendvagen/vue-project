@@ -48,7 +48,7 @@
             :to="{ name: 'favorites' }"
             class="bg-[url(/heart.svg)] bg-no-repeat pl-8 bg-left"
             active-class="text-black"
-            >Закладки</router-link
+            >Избранное</router-link
           >
         </li>
         <li class="flex items-center cursor-pointer gap-3 text-slate-600 hover:text-black">

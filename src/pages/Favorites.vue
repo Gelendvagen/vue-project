@@ -35,15 +35,14 @@ provide(favorites, 'favorites')
 
 <template>
   <div class="flex justify-between items-center flex-wrap gap-5">
-    <h2 class="text-3xl font-bold w-full">Мои закладки</h2>
+    <h2 class="text-3xl font-bold w-full">Избранное</h2>
   </div>
 
   <CardList :items="favorites" :onClickFavorite="removeFromFavorites" :onClickAdd="clickToCart" />
   <div v-if="favorites.length === 0" class="flex justify-center items-center min-h-[50vh]">
     <InfoBlock
-      title="Закладок нет"
-      description="Вы ничего не добавляли в закладки"
-      imageUrl="emoji-1.png"
+      title="Пусто :("
+      description="Вы ничего не добавляли в избранное"
     />
   </div>
 </template>

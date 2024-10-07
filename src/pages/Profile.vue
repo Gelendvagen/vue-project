@@ -25,7 +25,7 @@ watch(cart, () => {
 
 <template>
   <div class="flex justify-between items-center flex-wrap gap-5 mb-6">
-    <h1 class="text-3xl font-bold w-full">Мои заказы</h1>
+    <h1 class="text-3xl font-bold w-full">Заказы</h1>
     <p class="text-slate-600">Всего заказов: {{ orders.length }}</p>
   </div>
   <div class="">

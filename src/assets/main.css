@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: rgb(247 254 231);
+  background: rgb(231, 247, 254);
 }
 
 body:has(.open-cart) {
