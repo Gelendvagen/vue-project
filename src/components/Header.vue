@@ -16,7 +16,7 @@
         <img src="/logo.png" alt="Logo" class="w-10 mr-4" />
         <div>
           <span class="text-xl font-bold uppercase">Vue-Sneak Co.</span>
-          <h1 class="text-slate-500">Магазин</h1>
+          <h1 class="text-slate-500">Интернет-магазин</h1>
         </div>
       </div>
     </router-link>
