@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, inject, provide, watch } from 'vue'
 import CardList from '../components/CardList.vue'
-import InfoBlock from '@/components/InfoBlock.vue'
+import InfoBlock from '../components/InfoBlock.vue'
 import axios from 'axios'
 
 const favorites = inject('favorites', [])
