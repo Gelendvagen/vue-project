@@ -9,10 +9,10 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
+  base: '/vite-deploy-demo/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  base: '/vite-deploy-demo/'
+  }
 })
