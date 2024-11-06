@@ -9,5 +9,10 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
-  base: '/vue-project/'
+  base: '/vue-project/',
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
 })
